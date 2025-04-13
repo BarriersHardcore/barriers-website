@@ -1,0 +1,10 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.contactMainSection {
+    background: $green;
+    @include internalSection;
+    &:before {
+        background-image: url('/images/border-svgs/border-top-green.svg');
+    }
+}

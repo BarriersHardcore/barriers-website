@@ -1,0 +1,23 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.footer {
+    background: #000;
+    position: relative;
+    text-align: center;
+    padding: 1.5rem 0 2rem;
+    &:before {
+        @include border-top;
+        background: url('/images/border-svgs/border-top-black.svg');
+        top: -1.5rem;
+        background-position: -5px 0;
+    }
+    p {
+        color: #fff;
+        font-size: 1rem;
+        cursor: pointer;
+        &:hover {
+            color: $yellow;
+        }
+    }
+}

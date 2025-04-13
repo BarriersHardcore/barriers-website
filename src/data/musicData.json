@@ -1,0 +1,37 @@
+{
+    "title": "Music",
+    "content": "Barriers’ music delivers raw, aggressive hardcore punk. Check out their latest singles — ‘French Bulldog’ and ‘The Void’, as well as ‘Sick Sad World’, ‘Distant Memory’ and their 2019 debut album 'Through the Middle'.",
+    "bgImage": "/images/hero/hero-2.png",
+    "albums": [
+        { 
+            "title": "Through the Middle", 
+            "releaseYear": 2019, 
+            "thumbnail": "/images/through-the-middle.jpg", 
+            "link": "https://barriershardcore.bandcamp.com/album/through-the-middle" 
+        },
+        { 
+            "title": "Distant Memory", 
+            "releaseYear": 2024, 
+            "thumbnail": "/images/distant-memory.jpg", 
+            "link": "https://barriershardcore.bandcamp.com/track/distant-memory" 
+        },
+        { 
+            "title": "Sick Sad World", 
+            "releaseYear": 2024, 
+            "thumbnail": "/images/sick-sad-world.jpg", 
+            "link": "https://barriershardcore.bandcamp.com/track/sick-sad-world" 
+        },
+        { 
+            "title": "French Bulldog", 
+            "releaseYear": 2025, 
+            "thumbnail": "/images/french-bulldog.jpg", 
+            "link": "https://barriershardcore.bandcamp.com/album/french-bulldog" 
+        },
+        { 
+            "title": "The Void", 
+            "releaseYear": 2025, 
+            "thumbnail": "/images/the-void.jpg", 
+            "link": "https://barriershardcore.bandcamp.com/album/the-void" 
+        }
+    ]
+}

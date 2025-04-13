@@ -1,0 +1,88 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.musicMainSection {
+    @include internalSection;
+    background: $pink;
+    &:before {
+        background-image: url('/images/border-svgs/border-top-pink.svg');
+    }
+    p {
+        max-width: 800px;
+        margin: 0 auto 4rem;
+    }
+    .musicGrid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        margin: 0 0 4rem;
+        padding: 0;
+        list-style: none;
+        .musicGridItem {
+            display: inline-block;
+            padding: 3rem 2.5rem;
+            background-size: 200%;
+            background-position: center -2rem;
+            position: relative;
+            &:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background: rgba(#000, .8);
+                z-index: 0;
+            }
+            .musicGridImageLink,
+            .musicGridInfo {
+                position: relative;
+                z-index: 1;
+            }
+            .musicGridImageLink {
+                img {
+                    width: 100%;
+                    height: auto;
+                    margin: 0 0 2rem;
+                    box-shadow: 0px 0px 12px 1px rgba(255,255,255,.5);
+                }
+                &:hover img {
+                    @include shake;
+                }
+            }
+            .musicGridInfo {
+                color: #fff;
+                .musicGridTitle {
+                    @include h2;
+                    margin: 0
+                }
+                sub {
+                    font-size: 1.2rem;
+                    color: #ccc;
+                    font-style: italic;
+                    display: block;
+                    margin: .5rem 0;
+                }
+                .musicGridLink {
+                    @include button;
+                    display: inline-block;
+                    margin: 2rem 0 0;
+                }
+            }
+        }
+        @media (max-width: $lg) {
+            grid-template-columns: repeat(2, 1fr); // 2 per row on tablets
+        }
+        @media (max-width: $sm) {
+            grid-template-columns: repeat(1, 1fr); // 2 per row on tablets
+            gap: 1rem;
+            margin-bottom: 1rem;
+            .musicGridItem {
+                padding: 2rem 1.5rem;
+                .musicGridImageLink img {
+                    width: 200px;
+                }
+            }
+        }
+    }
+}

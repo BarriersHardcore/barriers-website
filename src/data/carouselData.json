@@ -1,0 +1,31 @@
+[
+    {
+        "title": "French bulldog",
+        "subtitle": "out now!",
+        "image": "/images/french-bulldog.jpg",
+        "bcId": "3249966394",
+        "href": "https://barriershardcore.bandcamp.com/track/french-bulldog"
+    },
+    {
+        "title": "The Void",
+        "subtitle": "out now!",
+        "image": "/images/the-void.jpg",
+        "bcId": "800171918",
+        "href": "https://barriershardcore.bandcamp.com/track/the-void"
+    },
+    {
+        "title": "Sick Sad World",
+        "subtitle": "listen now!",
+        "image": "/images/sick-sad-world.jpg",
+        "bcId": "1815405973",
+        "href": "https://barriershardcore.bandcamp.com/track/sick-sad-world"
+    },
+    {
+        "title": "Distant Memory",
+        "subtitle": "out now!",
+        "image": "/images/distant-memory.jpg",
+        "bcId": "1050759549",
+        "href": "https://barriershardcore.bandcamp.com/track/distant-memory"
+    }
+]
+

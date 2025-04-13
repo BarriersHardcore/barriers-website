@@ -1,0 +1,47 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.form {
+    margin: 2rem 0 0 0;
+    .formControl {
+        border: 0;
+        border-radius: 0;
+        margin-bottom: 1.5rem;
+    }
+    .formButton {
+        @include button;
+        text-transform: uppercase;
+        background: transparent;
+        color: #000;
+        border-radius: 0;
+        font-size: 1.5rem;
+        padding: .5rem 2rem;
+    }
+}
+
+.alert {
+    border: 0;
+    border-radius: 0;
+    margin: 1.5rem 0 0;
+    padding: 2rem 4rem;
+    color: #000;
+    i {
+        margin: .5rem 0 1rem;
+        font-size: 3rem;
+    }
+    p {
+        margin: 0;
+        &:nth-child(3) {
+            text-transform: initial;
+        }
+    }
+    &:global(.alert-danger) {
+        background: $pink;
+    }
+    &:global(.alert-success) {
+        background: rgba(#fff, .9);
+        i {
+            color: $green;
+        }
+    }
+}

@@ -1,0 +1,94 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+@use './animate.scss' as *;
+
+.marginTop {
+    margin-top: 166px;
+    :global(.home) & {
+        margin-top: 0;
+    }
+    @media (max-width: $sm) {
+        margin-top: 120px;
+        :global(.home) & {
+            margin-top: 120px;
+        }
+    }
+}
+
+.header {
+    background: #000;
+    position: relative;
+    z-index: 1;
+    &:after {
+        background: url('/images/border-svgs/border-bottom-black.svg');
+        @include border-top;
+        top: auto;
+        bottom: -1.5rem;
+        z-index: 1;
+    }
+    &.homepage {
+        background: transparent;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        &:after {
+            display: none;
+        }
+        .logo {
+            opacity: 0;
+            pointer-events: none;
+        }
+        @media (max-width: $xl) {
+            background: #000;
+            position: relative;
+            &:after {
+                display: initial;
+            }
+            .logo {
+                opacity: 1;
+            }
+        }
+    }
+    .logo {
+        position: relative;
+        display: inline-block;
+        margin: 3.4rem 0 2.5rem 5rem;
+        z-index: 2;
+        a {
+            img {
+                filter: invert(.5) brightness(200%) contrast(100%);
+            }
+            &:hover img {
+                filter: none;
+                @include shake;
+            }
+        }
+        @media (max-width: $xl) {
+            margin: 3.4rem 0 2.5rem 1.5rem;
+        }
+        @media (max-width: $sm) {
+            margin: 2rem 0 1rem .5rem;
+        }
+    }
+    &:global(.affix) {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        background: #000;
+        @include animate (slideInDown);
+        &:after {
+            display: initial;
+        }
+        .logo {
+            margin: 2.4rem 0 1.5rem 1.5rem;
+            opacity: 1;
+            @media (max-width: $sm) {
+                margin: 2rem 0 1rem .5rem;
+            }
+        }
+    }
+}

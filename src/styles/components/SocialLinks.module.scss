@@ -1,0 +1,47 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.socialLinks {
+    list-style: none;
+    padding: 0;
+    .socialLinkItem {
+        display: inline-block;
+        .socialLinkAnchor {
+            font-size: 2.2rem;
+            padding: .5rem;
+            @media (max-width: $sm) {
+                font-size: 1.9rem;
+            }
+            i {
+                color: #fff;
+                &:hover {
+                    color: $yellow;
+                    @include shake;
+                }
+            }
+        }
+    }
+    // :global(header) & {
+    //     position: relative;
+    //     top: 4rem;
+    //     left: 5rem;
+    //     z-index: -1;
+    // }
+    // :global(header.affix) & {
+    //     top: auto;
+    //     left: auto;
+    //     margin: 2.8rem 0 1.8rem 5rem;
+    // }
+    :global(.music) & {
+        margin: 0 0 3.5rem;
+        @media (max-width: $sm) {
+            margin: -2rem 0 2rem;
+        }
+    }
+    :global(.home section) & {
+        margin: 2.5rem 0 1.5rem;
+    }
+    :global(footer) & {
+        margin-bottom: 0;
+    }
+}

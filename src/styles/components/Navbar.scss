@@ -1,0 +1,96 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.navbar {
+    margin: 2.8rem 0 2rem 20rem;
+    position: absolute;
+    margin: 0;
+    top: 2.9rem;
+    right: 5rem;
+    .navbar-collapse {
+        .navbar-nav { // ul
+            .nav-item {
+                font-size: 2.188rem;
+                font-weight: 800;
+                margin: 0 2rem 0 0;
+                .nav-link {
+                    color: #fff;
+                    &:hover {
+                        color: $yellow;
+                        @include shake;
+                    }
+                }
+                &.active .nav-link {
+                    color: $yellow;
+                }
+                &:last-of-type {
+                    margin: 0;
+                }
+            }
+        }
+    }
+    .affix & {
+        top: 2rem;
+    }
+    @media (max-width: $xl) {
+        top: 4rem;
+        left: 0;
+        right: 0;
+        text-align: center;
+        padding: 0;
+        justify-content: right;
+        .navbar-toggler {
+            padding: 1rem;
+            border-radius: 0;
+            border: 0;
+            margin-right: 1.5rem;
+            .icon-bar {
+                transition: opacity, transform;
+                transition-duration: 200ms;
+                transition-timing-function: cubic-bezier(0.7, 0, 0, 0.7);
+                height: 3px;
+                width: 25px;
+                display: block;
+                background: $yellow;
+                + .icon-bar {
+                    margin-top: 5px;
+                }
+            }
+            &:focus, &:active {
+                box-shadow: none;
+            }
+            &.show .icon-bar {
+                &:nth-child(1) {
+                    transform: translateY(8px) rotate(45deg);
+                }
+                &:nth-child(2) {
+                    opacity: 0;
+                }
+                &:nth-child(3) {
+                    transform: translateY(-8px) rotate(-45deg);
+                }
+            }
+        }
+        .navbar-collapse {
+            background: #000;
+            margin-top: 2rem;
+            padding: 2rem 0;
+            z-index: 2;
+            .navbar-nav .nav-item {
+                margin: 0;
+            }
+        }
+        .affix & {
+            top: 3rem;
+        }
+    }
+    @media (max-width: $sm) {
+        top: 2.6rem;
+        .navbar-toggler {
+            margin-right: 0rem;
+        }
+        .affix & {
+            top: 2.6rem;
+        }
+    }
+}

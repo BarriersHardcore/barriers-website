@@ -1,0 +1,92 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.carousel {
+    max-width: 1000px;
+    margin: -4rem auto 0;
+    overflow: hidden;
+    padding: 1rem;
+    .carousel-indicators {
+        display: none;
+    }
+    .carousel-inner {
+        overflow: visible;
+        .carousel-item {
+            padding: 0 3rem;
+            .carousel-image {
+                transform: rotate(-5deg);
+                width: 350px;
+                height: 350px;
+            }
+            .carousel-caption {
+                top: 0;
+                right: 5rem;
+                bottom: 0;
+                left: auto;
+                padding: 0;
+                width: calc(100% - 32rem);
+                text-align: left;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                h3 {
+                    font-size: 3.75rem;
+                    line-height: 3.75rem;
+                    color: $yellow;
+                    span {
+                        color: #fff;
+                    }
+                }
+                iframe {
+                    margin-top: 1rem;
+                }
+            }
+        }
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+        opacity: 1;
+    }
+    .carousel-control-prev {
+        left: -3rem;
+    }
+    @media (max-width: $lg) {
+        .carousel-inner .carousel-item {
+            padding: 0;
+            .carousel-image {
+                width: 300px;
+                height: 300px;
+                margin: 0 auto;
+            }
+            .carousel-caption {
+                position: initial;
+                width: 100%;
+                text-align: center;
+                padding: 2rem 1rem;
+                h3 {
+                    font-size: 2.75rem;
+                    line-height: 2.75rem;
+                }
+                iframe {
+                    margin: 2rem auto 0;
+                }
+            }
+        }
+        .carousel-control-prev,
+        .carousel-control-next {
+            top: auto;
+            bottom: 7.5rem;
+        }
+        .carousel-control-prev {
+            left: -1rem;
+        }
+        .carousel-control-next {
+            right: -1rem;
+        }
+    }
+    @media (max-width: $sm) {
+        .carousel-inner .carousel-item .carousel-caption iframe {
+            width: 290px !important;
+        }
+    }
+}

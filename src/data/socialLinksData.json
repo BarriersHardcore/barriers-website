@@ -1,0 +1,56 @@
+[
+    {
+        "name": "Spotify",
+        "url": "https://open.spotify.com/artist/3PW0fhROb6GXAVCU9BaOrA?si=e0F07_ZyR-Cc_QYu5BRCgw",
+        "icon": "fa-brands fa-spotify",
+        "category": "spotify"
+    },
+    {
+        "name": "Deezer",
+        "url": "https://www.deezer.com/en/artist/1028475",
+        "icon": "fab fa-deezer",
+        "category": "deezer"
+    },
+    {
+        "name": "Amazon Music",
+        "url": "https://music.amazon.co.uk/artists/B0039UJZ1I/the-barriers",
+        "icon": "fab fa-amazon",
+        "category": "amazon"
+    },
+    {
+        "name": "Apple Music",
+        "url": "https://music.apple.com/us/artist/barriers/1482297421",
+        "icon": "fab fa-itunes-note",
+        "category": "apple"
+    },
+    {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/barriershardcore/",
+        "icon": "fa-brands fa-instagram",
+        "category": "instagram"
+    },
+    {
+        "name": "Facebook",
+        "url": "https://www.facebook.com/barriershardcore/",
+        "icon": "fa-brands fa-facebook",
+        "category": "facebook"
+    },
+    {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/@barriersHardcore",
+        "icon": "fa-brands fa-youtube",
+        "category": "youtube"
+    },
+    {
+        "name": "Bandcamp",
+        "url": "https://barriershardcore.bandcamp.com/",
+        "icon": "fa-brands fa-bandcamp",
+        "category": "bandcamp"
+    },
+    {
+        "name": "Linktree",
+        "url": "https://linktr.ee/BarriersHardcore/",
+        "icon": "fa-solid fa-link",
+        "category": "linktree"
+    }
+]

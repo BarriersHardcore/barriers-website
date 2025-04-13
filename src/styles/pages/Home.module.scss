@@ -1,0 +1,164 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.videoSection {
+    position: relative;
+    background: #000;
+    video {
+        opacity: .75;
+        height: 95vh;
+        object-fit: cover;
+    }
+    .videoContent {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 2rem;
+        .homeLogo {
+            width: 100%;
+            height: auto;
+            max-width: 900px;
+            display: block;
+            margin: 3rem auto 1.8rem;
+        }
+        .videoTitle {
+            color: $pink;
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    }
+    @media (max-width: $lg) {
+        .videoContent .videoTitle {
+            font-size: 3.063rem;
+            line-height: 2.75rem;
+        }
+    }
+    @media (max-width: $md) {
+        video {
+            height: 80vh;
+        }
+        .videoContent {
+            padding: 0 1rem;
+            .homeLogo {
+                margin: 0 auto 1.8rem;
+                padding: 0 1rem;
+            }
+            .videoTitle {
+                margin-top: 0;
+                font-size: 2.8rem;
+                line-height: 2.45rem;
+            }
+        }
+    }
+}
+
+.musicSection {
+    background: $pink;
+    position: relative;
+    text-align: center;
+    &:before {
+        @include border-top;
+        background: url('/images/border-svgs/border-top-pink.svg');
+        top: -1.5rem;
+    }
+    &:after {
+        @include border-bottom;
+        background: url('/images/border-svgs/border-bottom-pink.svg');
+        bottom: -1.5rem;
+    }
+    &:before,
+    &:after {
+        background-position: -5px 0;
+    }
+    .musicButton {
+        @include button;
+        margin: 2rem auto;
+        display: inline-block;
+        @media (max-width: $lg) {
+            margin: 0 auto 2rem auto;
+        }
+    }
+}
+
+.mainInfoSection {
+    color: #fff;
+    padding: 20rem 0 2rem;
+    text-align: center;
+    position: relative;
+    .mainInfoSectionBg {
+        background: #000;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        img {
+            width: 100%;
+            height: auto;
+            opacity: .4;
+            @media (max-width: $xl) {
+                width: 150%;
+                margin-left: -25%;
+            }
+            @media (max-width: $lg) {
+                width: 200%;
+                margin-left: -50%;
+            }
+        }
+        @media (max-width: $sm) {
+            top: 130px;
+            img {
+                width: 250%;
+                margin-left: -75%;
+            }
+        }
+    }
+    p {
+        margin-bottom: 3rem;
+    }
+}
+
+.gigsSection {
+    background: $yellow;
+    position: relative;
+    padding: 3rem 0;
+    &:before {
+        @include border-top;
+        background: url('/images/border-svgs/border-top-yellow.svg');
+        top: -1.5rem;
+    }
+    &:after {
+        @include border-bottom;
+        background: url('/images/border-svgs/border-bottom-yellow.svg');
+        bottom: -1.5rem;
+    }
+    &:before,
+    &:after {
+        background-position: -5px 0;
+    }
+}
+
+.merchSection {
+    padding: 6rem 0;
+    text-align: center;
+    background: url('/images/merch-bg.png') $green;
+    background-size: cover;
+    background-attachment: fixed;
+    h2 {
+        @include h2;
+    }
+    p {
+        margin: 1.5rem 0 2.5rem;
+    }
+    a {
+        @include button;
+        color: #000;
+    }
+}

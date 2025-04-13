@@ -1,0 +1,21 @@
+// globals.scss
+@use 'variables' as *;
+@use 'mixins' as *;
+@use 'components/Navbar.scss';
+@use 'components/Carousel.scss';
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+body {
+    font-family: 'Barlow Condensed', Arial, sans-serif;
+    font-style: normal;
+    text-transform: uppercase;
+    position: relative;
+}
+
+h1 {
+	@include h1;
+}
+
+p {
+    @include p;
+}

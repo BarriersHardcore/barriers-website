@@ -1,0 +1,17 @@
+{
+    "logo": "/images/barriers-home-logo.svg",
+    "title": "Hardcore Punk from Brighton, UK",
+    "content": "Barriers is a hardcore punk band from Brighton, UK, formed in 2017. Their sound blends the fast, raw energy of 90s skate punk with the aggressive intensity of modern hardcore.",
+    "bgImage": "/images/chris-bg.png",
+    "music": { 
+        "button": "all releases",
+        "href": "/music"
+    },
+    "merch": {
+        "bgImage": "/images/merch-bg.png",
+        "title": "Merch",
+        "content": "Get yourself to a show, or Check out our Bandcamp page to pick up some merch",
+        "button": "Online store",
+        "href": "https://barriershardcore.bandcamp.com/merch"
+    }
+}

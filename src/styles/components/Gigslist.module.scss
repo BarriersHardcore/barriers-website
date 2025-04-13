@@ -1,0 +1,110 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.gigsContainer {
+    .upcomingGigs,
+    .pastGigs {
+        h2 {
+            @include h2;
+            text-align: center;
+            margin: 0 0 3rem;
+        }
+        .gigsList {
+            padding: 0;
+            .gigsListItem {
+                background: #fff;
+                display: flex;
+                margin-bottom: 1rem;
+                font-size: 1.6rem;
+                line-height: 1.6rem;
+                .gigsListDate,
+                .gigsListVenue,
+                .gigsListTicket {
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    text-align: left;
+                }
+                .gigsListDate {
+                    background: #000;
+                    color: #fff;
+                    text-align: center;
+                    max-width: 130px;
+                    padding: .8rem 1.1rem;
+                }
+                .gigsListVenue {
+                    padding: 0 2rem;
+                }
+                .gigsListTicket {
+                    max-width: 150px;
+                    padding: 0 .5rem;
+                    a {
+                        @include button;
+                        font-size: 1.6rem;
+                        color: #000;
+                        text-align: center;
+                        padding: .4rem .2rem;
+                    }
+                }
+            }
+        }
+    }
+    .pastGigs {
+        h2 {
+            margin: 3rem 0 3rem;
+        }
+        .gigsList .gigsListItem {
+            opacity: .8;
+        }
+        button {
+            background: none;
+            border: 0;
+            text-transform: uppercase;
+            margin-top: 1rem;
+            color: #000;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    @media (max-width: $md) {
+        .upcomingGigs,
+        .pastGigs {
+            .gigsList .gigsListItem {
+                display: block;
+                position: relative;
+                .gigsListDate,
+                .gigsListVenue,
+                .gigsListTicket {
+                    padding: .5rem;
+                    text-align: left;
+                    display: block;
+                }
+                .gigsListDate {
+                    max-width: initial;
+                    padding: .5rem 106px .5rem .5rem;
+                }
+                .gigsListVenue {
+                    padding: .5rem 106px .5rem .5rem;
+                    &:last-of-type {
+                        padding-right: .5rem
+                    }
+                }
+                .gigsListTicket {
+                    max-width: initial;
+                    padding: 0 .5rem 0 0;
+                    position: absolute;
+                    bottom: .5rem;
+                    right: 0;
+                    a {
+                        font-size: 1.3rem;
+                        padding: 0;
+                        min-width: 90px;
+                        background:#fff;
+                    }
+                }
+            }
+        }
+    }
+}

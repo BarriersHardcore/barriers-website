@@ -1,0 +1,10 @@
+{
+    "navLinks": [
+        { "label": "Music", "href": "/music" },
+        { "label": "Gigs", "href": "/gigs" },
+        { "label": "Merch", "href": "https://barriershardcore.bandcamp.com/merch" },
+        { "label": "Contact", "href": "/contact" },
+        { "label": "EPK", "href": "https://barriershardcore.github.io/EPK/"}
+    ]
+}
+  
