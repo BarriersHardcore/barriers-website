@@ -20,7 +20,7 @@ const Contact: React.FC = () => {
   	return (
     	<>
 			<HeadTags
-				title="Contact us"
+				title="Contact"
 				description="Reach out to us for inquiries or bookings."
 				image=""
 				url="contact">

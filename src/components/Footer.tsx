@@ -21,10 +21,14 @@ const Footer: React.FC = () => {
 
 						<Modal show={show} onHide={handleClose} centered>
 							<Modal.Header closeButton>
-								<Modal.Title>Image &amp; video credits</Modal.Title>
+								<Modal.Title>Video &amp; photography credits</Modal.Title>
 							</Modal.Header>
 							<Modal.Body>
-								Homepage video: <a href="https://www.lumecreativemedia.com/" target="_blank">Lume Creative Media</a>
+								🎥 <a href="https://www.lumecreativemedia.com/" target="_blank">Lume Creative Media</a><br/>
+								📸 <a href="https://www.instagram.com/klab.paint/" target="_blank">klab.paint</a><br/>
+								📸 <a href="https://www.instagram.com/blondieslondon/" target="_blank">blondieslondon</a><br/>
+								📸 <a href="https://www.instagram.com/reprievevision/" target="_blank">Jon Sugden | Reprievevision</a><br/>
+								📸 <a href="https://www.instagram.com/coco.henley/" target="_blank">Coco Henley</a><br/>
 							</Modal.Body>
 						</Modal>
 					</Col>

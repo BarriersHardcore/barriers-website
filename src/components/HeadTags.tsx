@@ -38,11 +38,13 @@ const HeadTags: React.FC<OGTagsProps> = ({
             <meta name="author" content="Barriers" />
 
             {/* Open Graph Meta Tags */}
-            <meta property="og:title" content={title || defaultTitle} />
+            <meta property="og:title" content={`BARRIERS | ${title || defaultTitle}`} />
             <meta property="og:description" content={description || defaultDescription} />
             <meta property="og:image" content={image || defaultImage} />
             <meta property="og:url" content= {`https://barriershardcore.com/${url || defaultUrl}`} />
             <meta property="og:type" content={type} />
+            <meta property="og:site_name" content="Barriers Hardcore Official Website" />
+            <meta property="og:locale" content="en-GB" />
 
             {/* Favicon */}
             <link rel="icon" href={favicon} type="image/x-icon" />
