@@ -171,7 +171,7 @@ return (
 		</HeadTags>
 
 		<section className={styles.videoSection}>
-			<video width="100%" height="auto" preload="none" autoPlay loop muted playsInline>
+			<video width="100%" height="auto" preload="none" autoPlay loop muted playsInline poster="/images/home-background-fallback.jpg">
 				<source src="/video/home-background.mp4" type="video/mp4" />
 				Your browser does not support the html video tag - use a better browser.
 			</video>
