@@ -19,7 +19,7 @@ const structuredData = {
 	"sameAs": [
 		"https://www.instagram.com/barriershardcore/",
 		"https://www.facebook.com/barriershardcore/",
-		"https://www.youtube.com/@barriers4072",
+		"https://www.youtube.com/@barriershardcore",
 		"https://barriershardcore.bandcamp.com/",
 		"https://open.spotify.com/artist/3PW0fhROb6GXAVCU9BaOrA",    
 		"https://linktr.ee/BarriersHardcore",
@@ -56,7 +56,7 @@ const structuredData = {
 			"releaseDate": "2024-04-18",
 			"duration": "PT2M36S",  //(ISO 8601 format)
 			"genre": "Punk Hardcore",
-			"image": "https://www.therockstarsband.com/single-two-cover.jpg"
+			"image": "https://www.barriershardcore.com/images/french-bulldog.jpg"
 		},
 		{
 			"@type": "MusicRecording",
@@ -65,7 +65,7 @@ const structuredData = {
 			"releaseDate": "2024-04-18",
 			"duration": "PT43S",  //(ISO 8601 format)
 			"genre": "Punk Hardcore",
-			"image": "https://www.therockstarsband.com/single-two-cover.jpg"
+			"image": "https://www.barriershardcore.com/images/the-void.jpg"
 		},
 		{
 			"@type": "MusicRecording",
@@ -74,7 +74,7 @@ const structuredData = {
 			"releaseDate": "2024-08-09",
 			"duration": "PT2M59S",  //(ISO 8601 format)
 			"genre": "Punk Hardcore",
-			"image": "https://www.therockstarsband.com/single-two-cover.jpg"
+			"image": "https://www.barriershardcore.com/images/sick-sad-world.jpg"
 		},
 		{
 			"@type": "MusicRecording",
@@ -83,7 +83,7 @@ const structuredData = {
 			"releaseDate": "2024-04-18",
 			"duration": "PT3M10S",  //(ISO 8601 format)
 			"genre": "Punk Hardcore",
-			"image": "https://www.therockstarsband.com/single-one-cover.jpg"
+			"image": "https://www.barriershardcore.com/images/distant-memory.jpg"
 		}
 	],
 	"album": [
@@ -93,15 +93,15 @@ const structuredData = {
 			"url": "https://barriershardcore.bandcamp.com/album/through-the-middle",
 			"datePublished": "2019-11-04",
 			"genre": "Punk Hardcore",
-			"image": "https://www.therockstarsband.com/rock-on-cover.jpg",
+			"image": "https://www.barriershardcore.com/images/through-the-middle.jpg",
 			"byArtist": {
 				"@type": "MusicGroup",
 				"name": "Barriers"
 			}
 		}
 	],  
-	"logo": "https://www.therockersband.com/logo.png",
-	"image": "https://www.therockersband.com/cover-image.jpg",
+	"logo": "https://www.barriershardcore.com/images/og-logo.jpg",
+	"image": "https://www.barriershardcore.com/images/barriers-band-image.jpg",
 	"contactPoint": {
 		"@type": "ContactPoint",
 		"contactType": "Email",

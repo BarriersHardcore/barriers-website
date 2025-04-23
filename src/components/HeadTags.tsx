@@ -24,7 +24,7 @@ const HeadTags: React.FC<OGTagsProps> = ({
     }) => {
     const defaultTitle = "BARRIERS | Hardcore Punk Band from Brighton, UK";
     const defaultDescription = "Barriers is a hardcore punk band from Brighton, UK. Explore their music, singles, and upcoming gigs.";
-    const defaultImage = "https://barriershardcore.com/images/og-logo.jpg";
+    const defaultImage = "https://barriershardcore.com/images/og-logo.png";
     const defaultUrl = "https://barriershardcore.com/";
 
     return (
