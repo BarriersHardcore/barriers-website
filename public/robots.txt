@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /account/
+Disallow: /search/
+Allow: /
+
+Sitemap: https://barriershardcore.com/sitemap.xml
