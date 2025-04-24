@@ -57,15 +57,27 @@ const GigsListGoogle = ({ showUpcomingGigsOnly, showNextGigOnly, heading }: Gigs
     useEffect(() => {
         const now = new Date();
 
-        // Sort gigs by date
-        const sortedGigs = gigs.map((gig) => ({
-            ...gig,
-            date: new Date(gig.date), // Ensure date is parsed correctly
-        }));
+        const sortedGigs = gigs.map((gig) => {
+            const gigDate = new Date(gig.date);
 
-        // Split gigs into upcoming and past
-        const upcoming = sortedGigs.filter((gig) => gig.date > now).sort((a, b) => a.date.getTime() - b.date.getTime());
-        const past = sortedGigs.filter((gig) => gig.date <= now).sort((a, b) => b.date.getTime() - a.date.getTime());
+            // Set to 00:00:00 GMT the day after the gig
+            const cutoff = new Date(Date.UTC(
+                gigDate.getUTCFullYear(),
+                gigDate.getUTCMonth(),
+                gigDate.getUTCDate() + 1, // next day
+                0, 0, 0
+            ));
+
+            return { ...gig, cutoff };
+        }).sort((a, b) => a.cutoff.getTime() - b.cutoff.getTime());
+
+        const upcoming = sortedGigs
+            .filter((gig) => now < gig.cutoff)
+            .sort((a, b) => a.cutoff.getTime() - b.cutoff.getTime());
+
+        const past = sortedGigs
+            .filter((gig) => now >= gig.cutoff)
+            .sort((a, b) => b.cutoff.getTime() - a.cutoff.getTime());
 
         setUpcomingGigs(upcoming);
         setPastGigs(past);

@@ -100,7 +100,7 @@ const structuredData = {
 			}
 		}
 	],  
-	"logo": "https://www.barriershardcore.com/images/og-logo.jpg",
+	"logo": "https://www.barriershardcore.com/images/barriers-band-image.jpg",
 	"image": "https://www.barriershardcore.com/images/barriers-band-image.jpg",
 	"contactPoint": {
 		"@type": "ContactPoint",
@@ -177,7 +177,7 @@ return (
 			</video>
 			<div className={styles.videoContent}>
 				<Image
-					src={data.logo || '/images/og-logo.jpg'}
+					src={data.logo || '/images/og-logo.png'}
 					alt="Barriers Band Logo"
 					width={900}
 					height={305}
