@@ -107,7 +107,7 @@ const GigsListGoogle = ({ showUpcomingGigsOnly, showNextGigOnly, heading }: Gigs
                 <div className={styles.upcomingGigs}>
                     <h2>{heading || 'Upcoming Gigs'}</h2> {/* Default heading if no prop is passed */}
                     {upcomingGigs.length === 0 ? (
-                        <p>No upcoming gigs</p>
+                        <p>No gigs planned at the moment</p>
                     ) : (
                         <ul className={styles.gigsList}>
                             {upcomingGigs.map((gig) => (

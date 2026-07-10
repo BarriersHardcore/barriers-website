@@ -25,6 +25,7 @@ const Footer: React.FC = () => {
 							</Modal.Header>
 							<Modal.Body>
 								🎥 <a href="https://www.lumecreativemedia.com/" target="_blank">Lume Creative Media</a><br/>
+								📸 <a href="https://www.facebook.com/p/Dave-Gee-Photos-No-GodsNo-Masters-100087118610191/" target="_blank">Dave Gee</a><br/>
 								📸 <a href="https://www.instagram.com/klab.paint/" target="_blank">klab.paint</a><br/>
 								📸 <a href="https://www.instagram.com/blondieslondon/" target="_blank">blondieslondon</a><br/>
 								📸 <a href="https://www.instagram.com/reprievevision/" target="_blank">Jon Sugden | Reprievevision</a><br/>

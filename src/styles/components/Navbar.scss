@@ -16,12 +16,12 @@
                 .nav-link {
                     color: #fff;
                     &:hover {
-                        color: $yellow;
+                        color: $teal;
                         @include shake;
                     }
                 }
                 &.active .nav-link {
-                    color: $yellow;
+                    color: $teal;
                 }
                 &:last-of-type {
                     margin: 0;
@@ -51,7 +51,7 @@
                 height: 3px;
                 width: 25px;
                 display: block;
-                background: $yellow;
+                background: $teal;
                 + .icon-bar {
                     margin-top: 5px;
                 }
