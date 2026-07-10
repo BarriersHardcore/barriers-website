@@ -3,7 +3,7 @@
 
 .videoSection {
     position: relative;
-    background: #000;
+    background: $red;
     video {
         opacity: .75;
         height: 95vh;
@@ -27,7 +27,7 @@
             margin: 3rem auto 1.8rem;
         }
         .videoTitle {
-            color: $pink;
+            color: #fff;
             text-align: center;
             max-width: 600px;
             margin: 0 auto;
@@ -59,17 +59,17 @@
 }
 
 .musicSection {
-    background: $pink;
+    background: $red;
     position: relative;
     text-align: center;
     &:before {
         @include border-top;
-        background: url('/images/border-svgs/border-top-pink.svg');
+        background: url('/images/border-svgs/border-top-red.svg');
         top: -1.5rem;
     }
     &:after {
         @include border-bottom;
-        background: url('/images/border-svgs/border-bottom-pink.svg');
+        background: url('/images/border-svgs/border-bottom-red.svg');
         bottom: -1.5rem;
     }
     &:before,
@@ -129,6 +129,9 @@
     background: $yellow;
     position: relative;
     padding: 3rem 0;
+    p {
+        text-align: center;
+    }
     &:before {
         @include border-top;
         background: url('/images/border-svgs/border-top-yellow.svg');
@@ -148,9 +151,10 @@
 .merchSection {
     padding: 6rem 0;
     text-align: center;
-    background: url('/images/merch-bg.png') $green;
+    background: url('/images/merch-bg-2.png') #000;
     background-size: cover;
     background-attachment: fixed;
+    color: #fff;
     h2 {
         @include h2;
     }
@@ -159,6 +163,5 @@
     }
     a {
         @include button;
-        color: #000;
     }
 }

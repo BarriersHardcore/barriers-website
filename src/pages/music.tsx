@@ -54,6 +54,8 @@ const Music: React.FC = () => {
 
 							<SocialLinks categories={['spotify', 'bandcamp', 'apple', 'amazon', 'deezer']} />
 
+							<h2>Discography</h2>
+							
 							<ul className={styles.musicGrid}>
 								{data.albums
 									?.slice() // Create a shallow copy of the albums array

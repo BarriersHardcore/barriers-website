@@ -1,31 +1,24 @@
 [
     {
-        "title": "French bulldog",
-        "subtitle": "out now!",
-        "image": "/images/french-bulldog.jpg",
-        "bcId": "3249966394",
-        "href": "https://barriershardcore.bandcamp.com/track/french-bulldog"
+        "title": "Adversity",
+        "subtitle": "streaming now!",
+        "image": "/images/adversity.jpg",
+        "bcId": "1148801407",
+        "href": "https://barriershardcore.bandcamp.com/track/adversity"
     },
     {
-        "title": "The Void",
-        "subtitle": "out now!",
-        "image": "/images/the-void.jpg",
-        "bcId": "800171918",
-        "href": "https://barriershardcore.bandcamp.com/track/the-void"
+        "title": "Final Fight",
+        "subtitle": "7/08/26",
+        "image": "/images/final-fight.jpg",
+        "bcId": "3685626370",
+        "href": "https://barriershardcore.bandcamp.com/track/final-fight"
     },
     {
-        "title": "Sick Sad World",
-        "subtitle": "listen now!",
-        "image": "/images/sick-sad-world.jpg",
-        "bcId": "1815405973",
-        "href": "https://barriershardcore.bandcamp.com/track/sick-sad-world"
-    },
-    {
-        "title": "Distant Memory",
-        "subtitle": "out now!",
-        "image": "/images/distant-memory.jpg",
-        "bcId": "1050759549",
-        "href": "https://barriershardcore.bandcamp.com/track/distant-memory"
+        "title": "Time Crisis EP",
+        "subtitle": "21/08/26",
+        "image": "/images/time-crisis.jpg",
+        "bcId": "1227942544",
+        "href": "https://barriershardcore.bandcamp.com/album/time-crisis"
     }
 ]
 

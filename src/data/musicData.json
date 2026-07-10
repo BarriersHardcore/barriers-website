@@ -32,6 +32,12 @@
             "releaseYear": 2025, 
             "thumbnail": "/images/the-void.jpg", 
             "link": "https://barriershardcore.bandcamp.com/track/the-void" 
+        },
+        { 
+            "title": "Time Crisis", 
+            "releaseYear": 2026, 
+            "thumbnail": "/images/time-crisis.jpg", 
+            "link": "https://barriershardcore.bandcamp.com/album/time-crisis" 
         }
     ]
 }
